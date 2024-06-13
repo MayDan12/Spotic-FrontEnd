@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  padding: 0 4rem 0 4rem;
+  padding: 0 4.5rem 0 4.5rem;
 }
 
 .nav-bar {
@@ -64,7 +64,7 @@ body {
 /* Popular Packages */
 .packages-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 4rem 0 4rem 0;
 }
 
@@ -91,19 +91,22 @@ body {
 /* Packages List */
 .packages-list {
   display: grid;
-  margin: 0 auto;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1.5rem;
+  justify-content: center;
 }
 
-.package {
-  width: 37rem;
-  padding: 1.5rem;
+.pack-img {
+  width: auto;
   border: 1px solid #e0e0e0;
   border-radius: 1rem;
 }
 
-.package img {
+.package {
+  padding: 0.5rem 1.5rem;
+}
+
+.pack-img img {
   width: 100%;
 }
 
@@ -121,7 +124,11 @@ body {
   color: #afafb3;
 }
 
-.package button {
+.pack-img .btn {
+  text-align: right;
+  padding-right: 1.5rem;
+}
+.pack-img button {
   width: 13rem;
   padding: 1.5rem;
   background-color: #f86800;
@@ -131,10 +138,57 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   cursor: pointer;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 /* Inspiration Page */
 .inspiration {
-  margin-top: 4rem;
+  margin: 5rem 0 5rem 0;
+}
+
+.inspiration h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.inspiration-tab {
+  display: flex;
+}
+
+.insp-btn {
+  display: block;
+  text-decoration: none;
+  margin: 0 1.5rem 2rem 0;
+  padding-bottom: 0.9rem;
+  color: #737375;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background-color: none;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.active {
+  border-bottom: 1px solid #000;
+  color: #000;
+}
+
+.insp-btn:hover {
+  transition: ease-in-out 0.4s;
+  color: #f86800;
+}
+
+.dest {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.dest p {
+  font-size: 1.4rem;
+  color: #a6a6b1;
+  font-weight: 600;
+}
+
+.box {
+  margin-top: 1rem;
 }
