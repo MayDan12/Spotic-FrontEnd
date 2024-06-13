@@ -317,13 +317,87 @@ function UniqueStays() {
 }
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
-    <footer className="container">
-      <div className="footer-box">
-        <div></div>
-        <div></div>
-        <div></div>
+    <footer className="footer-bg">
+      <div className="container">
+        <div className="footer">
+          <div className="footer-box">
+            <h2>Support</h2>
+            <ul>
+              <li>
+                <a href="https://">Help Center</a>
+              </li>
+              <li>
+                <a href="https://">Safety Information</a>
+              </li>
+              <li>
+                <a href="https://">Cancellation Options</a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-box">
+            <h2>Packages</h2>
+            <ul>
+              <li>
+                <a href="https://">Budget Package</a>
+              </li>
+              <li>
+                <a href="https://">Package by days</a>
+              </li>
+              <li>
+                <a href="https://">Honeymoon package</a>
+              </li>
+              <li>
+                <a href="https://">Family Trip</a>
+              </li>
+              <li>
+                <a href="https://">Get Away Package</a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-box">
+            <h2>About</h2>
+            <ul>
+              <li>
+                <a href="https://">Newsroon</a>
+              </li>
+              <li>
+                <a href="https://">Learn about new features</a>
+              </li>
+              <li>
+                <a href="https://">Careers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="footer-bottom">
+          <div className="line"></div>
+          <div className="flex">
+            <div className="flex">
+              <p>© {currentYear} Travel Surity. All rights reserved</p>
+              <a href="https://">Privacy</a>
+              <a href="https://">Terms</a>
+              <a href="https://">Sitemap</a>
+            </div>
+            <div>
+              <a href="https://github.com/MayDan12">
+                <ion-icon class="footer-icon" name="logo-github"></ion-icon>
+              </a>
+              <a href="https://twitter.com/Mayowadan12">
+                <ion-icon class="footer-icon" name="logo-twitter"></ion-icon>
+              </a>
+              <a href="https://instagram.com/mayowa_dan">
+                <ion-icon class="footer-icon" name="logo-instagram"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   );
+}
+
+function FooterBox({ children }) {
+  return { children };
 }

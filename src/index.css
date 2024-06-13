@@ -4,6 +4,10 @@
   box-sizing: border-box0;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -14,7 +18,7 @@ body {
 }
 
 .container {
-  padding: 0 4.5rem 0 4.5rem;
+  padding: 0 6rem 0 6rem;
 }
 
 .nav-bar {
@@ -157,7 +161,6 @@ body {
 
 .insp-btn {
   display: block;
-  text-decoration: none;
   margin: 0 1.5rem 2rem 0;
   padding-bottom: 0.9rem;
   color: #737375;
@@ -169,8 +172,8 @@ body {
 }
 
 .active {
-  border-bottom: 1px solid #000;
-  color: #000;
+  border-bottom: 1px solid #222;
+  color: #222;
 }
 
 .insp-btn:hover {
@@ -191,4 +194,71 @@ body {
 
 .box {
   margin-top: 1rem;
+}
+
+/* Footer */
+
+.footer-bg {
+  background-color: #f3f3f7;
+  padding: 2rem 0 3rem 0;
+}
+.footer {
+  display: flex;
+  justify-content: left;
+  margin-top: 8rem;
+}
+.footer-box {
+  margin-right: 21rem;
+}
+.footer-box h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.footer-box ul {
+  list-style: none;
+}
+
+.footer-box ul li {
+  margin-top: 1.5rem;
+}
+
+.footer-box ul li a {
+  color: #737375;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.footer-bottom {
+}
+
+.footer-bottom .line {
+  margin: 2.8rem auto;
+  width: 95%;
+  height: 0.2rem;
+  background-color: #808185;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom p {
+  font-size: 1.3rem;
+  color: #737375;
+  font-weight: 600;
+}
+
+.footer-bottom a {
+  color: #737375;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.footer-icon {
+  width: 2.5rem;
+  height: 2.5rem;
 }
