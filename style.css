@@ -1,128 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-* {
-    box-sizing: border-box;
+body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #F86800;
-}
-
-.home-container {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    display: flex;
-    background: url('public/external/Oilpaint.png') no-repeat center center;
-    background-size: cover;
+    background-color: #0663cdeb;
+    font-family: Arial, sans-serif;
 }
 
-.logo-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.logo-container img {
-    max-width: 40px;
-}
-
-.home-frame8 {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    background-color: rgba(0, 0, 0, 0);
-    flex-shrink: 0;
-    padding: 20px;
-}
-
-.home-signin {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
-    padding: 20px;
-    position: relative;
-}
-
-.content {
+.container {
     text-align: center;
-    width: 80%;
 }
 
-.home-signin .content h2 {
-    margin: 0;
-    color: #fff;
-}
-
-.home-signin .content p {
-    margin: 10px 0;
-    color: #fff;
-}
-
-.home-signin .content input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #969292;
-    border-radius: 5px;
-}
-
-.home-signin .content input::placeholder {
-    color: #fff;
-}
-
-.signin-text08 {
-    font-size: 16px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-}
-
-.google-button {
-    display: flex;
+.logo {
+    position: relative;
     align-items: center;
-    justify-content: center;
-    background-color: white;
-    color: black;
-    font-weight: 600;
-    border: 1px solid #ccc;
-    padding: 10px;
 }
 
-.google-button svg {
-    margin-right: 10px;
-    background-color: transparent;
+h1 {
+    color: white;
+    font-size: 60px;
+    margin-top: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
